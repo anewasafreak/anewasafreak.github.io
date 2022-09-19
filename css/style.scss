@@ -1,0 +1,47 @@
+$body-bg: #06092e;
+$header-bg: #2a214e;
+$header-desc-bg: #201841;
+$main-bg: #522b67;
+$color: #9FE499;
+// $color: #4ace4a;
+
+@font-face {
+  font-family: "omorifont";
+  src: url("/fonts/OMORI_GAME.woff") format("woff"),
+    url("/fonts/OMORI_GAME2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: $body-bg;
+  color: $color;
+  font-family: omorifont;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+
+  h1 {
+    background-color: $header-bg;
+    font-size: 400%;
+    margin: 0;
+  }
+
+  h2 {
+    background-color: $header-desc-bg;
+    font-size: 200%;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 0 5%;
+    width: 50%;
+  }
+}
+
+main {
+  background-color: $main-bg;
+}
