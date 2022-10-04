@@ -1,13 +1,7 @@
-@font-face {
-  font-family: "omorifont";
-  src: url("/fonts/OMORI_GAME.woff") format("woff"), url("/fonts/OMORI_GAME2.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 body {
   background-color: #06092e;
   color: #9FE499;
-  font-family: omorifont;
+  font-family: sans-serif;
   margin: 0;
   padding: 20px;
 }
