@@ -1,8 +1,10 @@
-$body-bg: #06092e;
-$header-bg: #2a214e;
+$body-bg: #403233;
+$header-bg: #98d9c2;
 $header-desc-bg: #201841;
 $main-bg: #522b67;
-$color: #9FE499;
+$color: #1e1145;
+$nav-bg: #51193b;
+$nav-color: #cdd3dd;
 // $color: #4ace4a;
 
 // @font-face {
@@ -43,6 +45,23 @@ header {
   }
 }
 
+nav {
+  display: flex;
+  background-color: $nav-bg;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    color: $nav-color;
+    padding: 10px;
+  }
+}
+
 main {
   background-color: $main-bg;
+}
+
+.divider {
+  padding: 2px;
+  background-color: #1e1145;
+  margin: 50px 0;
 }
