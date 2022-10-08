@@ -1,3 +1,9 @@
+class GroupDesc {
+  constructor(name, description) {
+    this.name = name;
+    this.description = description;
+  }
+}
 class Oc {
   constructor(name, pronouns, height, age, gender, description, image, link) {
     this.name = name;
@@ -17,7 +23,10 @@ class Oc {
   }
 }
 
-let Mortis = ["Mortis"];
+let Mortis = [];
+
+let mortisDesc = new GroupDesc("Mortis", "A group led by a leader who escaped a certain lab 5 years ago with the help of the executives - they're all lab escapees. All of the higher ups aren't human except for the right hand man, though they aren't the only ones like that in this peculiar group.")
+Mortis.push(mortisDesc)
 
 let hanako = new Oc(
   "Hanako",
@@ -52,14 +61,47 @@ let tesa = new Oc(
   ""
 );
 
+let abaddon = new Oc(
+  "Abaddon",
+  "he/him",
+  150,
+  "a lot",
+  "Cis male",
+  "Abaddon is a skilled assassin, and doesn't really boast about it. The only reason he's gotten so good at it anyway is because he thrives off of drinking animal/human blood. As a butterfly he's supposed to enjoy sweets, but due to a mutation Abaddon greatly enjoys licking the blood off of his knife.",
+  "",
+  ""
+);
+
+let calypsus = new Oc(
+  "Calypsus",
+  "he/star",
+  178,
+  "a lot",
+  "Cis male",
+  "An extremely nice person. Calypsus, or Cal, is a normally soft-spoken person that shows a lot of compassion for people. Though despite that, star's quite good at his job - being an assassin and front-line fighter.",
+  "",
+  ""
+);
+
 Mortis.push(hanako);
 Mortis.push(namida);
 Mortis.push(tesa);
+Mortis.push(abaddon);
+Mortis.push(calypsus);
 
 function createProfile(data) {
   if (document.querySelector("main").id === "OCs-main") {
     let groupWrapper = document.createElement("div");
     groupWrapper.className = "group-wrapper";
+
+    let groupH2 = document.createElement("h2");
+    groupH2.innerText = data[0].name;
+
+    let groupDesc = document.createElement("h4");
+    groupDesc.innerText = data[0].description;
+
+    groupWrapper.append(groupH2)
+    groupWrapper.append(groupDesc)
     for (let i = 1; i < data.length; i++) {
       let profileWrapper = document.createElement("div");
       profileWrapper.className = "profile-wrapper";
@@ -127,4 +169,3 @@ function createProfile(data) {
 }
 
 createProfile(Mortis);
-
