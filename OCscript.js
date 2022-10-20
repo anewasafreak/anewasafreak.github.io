@@ -215,7 +215,7 @@ let adam = new Oc(
   "An outgoing person, even more so than his sister Eve. Adam mostly enjoys music and makes quite a living off of performing in cafes and bars. He also uploads covers and his own songs to the internet, which also gains him a fair bit of money. It's unclear whether or not this money is gotten due to his techniques, how nice and open-minded he is, or just his looks.",
   "",
   ""
-)
+);
 
 let noella = new Oc(
   "Noella Baketman",
@@ -223,10 +223,25 @@ let noella = new Oc(
   178,
   20,
   "Demi-girl",
-  "Noella can easily talk to people and doesn't mind it, however, they prefer to do people watching. It isn't clear to most people why. Though I can let you in on a secret of hers: she collects information on"
-)
+  "Noella can easily talk to people and doesn't mind it, however, they prefer to do people watching. It isn't clear to most people why. Though I can let you in on a secret of hers: she collects information on people she knows as a hobby. She never sells or gives away the information, but instead, analyses it and chooses her words carefully based on said info. That's why during your first meeting with them they might be a little awkward.",
+  "",
+  ""
+);
+
+let kai = new Oc(
+  "Kai Jakers",
+  "he/him",
+  165,
+  16,
+  "Transgender male",
+  "The prime example of a shut-off. Kai is homsechooled and doesn't ever go out during the day. If he ever does come out, it's during the night, and only for a few minutes for a walk. Despite all that, he can carry a conversation quite well, even if all he'll say will be a few words.",
+  "",
+  ""
+);
 
 LiB.push(eve);
 LiB.push(adam);
+LiB.push(noella);
+LiB.push(kai);
 
-createProfile(LiB)
+createProfile(LiB);
