@@ -67,7 +67,7 @@ main {
 #contact-list {
   list-style: none;
   padding: 0;
-  background-color: #7b74a9;
+  background: linear-gradient(0deg, #7b74a9 0%, #8483b0 100%);
   color: #1e0303;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -75,10 +75,11 @@ main {
   padding: 20px 40px;
   text-align: center;
   margin: 7.5% auto;
+  border-radius: 5px;
+  font-style: italic;
 }
 #contact-list a {
   color: #1e0303;
   -webkit-text-decoration: underline 1px #1e0303;
           text-decoration: underline 1px #1e0303;
-  font-style: italic;
 }/*# sourceMappingURL=style.css.map */

@@ -10,6 +10,7 @@ $nav-bg: #1c1f54;
 $nav-color: #e6ecea;
 $nav-border: rgba(#8c92b6, 0.2);
 $contact-bg: #7b74a9;
+$contact-bg-2: #8483b0;
 $contact-color: #1e0303;
 // $color: #4ace4a;
 
@@ -91,16 +92,17 @@ main {
 #contact-list {
   list-style: none;
   padding: 0;
-  // background: linear-gradient(0deg, $body-bg 0%, $body-bg-2 100%);
-  background-color: $contact-bg;
+  background: linear-gradient(0deg, $contact-bg 0%, $contact-bg-2 100%);
+  // background-color: $contact-bg;
   color: $contact-color;
   width: fit-content;
   padding: 20px 40px;
   text-align: center;
   margin: 7.5% auto;
+  border-radius: 5px;
+  font-style: italic;
   a {
     color: $contact-color;
     text-decoration: underline 1px $contact-color;
-    font-style: italic;
   }
 }
