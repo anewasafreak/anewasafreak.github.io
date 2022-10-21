@@ -4,15 +4,13 @@ $header-bg: #adbdcd;
 $header-bg-2: #9ba7c2;
 $header-desc-bg: #201841;
 $header-color: #4e2050;
-$main-bg: #522b67;
+$main-bg: #ADBDCD;
 $color: #1e1145;
 $nav-bg: #1c1f54;
 $nav-color: #e6ecea;
 $nav-border: rgba(#8c92b6, 0.2);
 $contact-bg: #7b74a9;
-$contact-bg-2: #8483b0;
 $contact-color: #1e0303;
-// $color: #4ace4a;
 
 // @font-face {
 //   font-family: "omorifont";
@@ -75,10 +73,6 @@ nav {
   }
 }
 
-main {
-  background-color: $main-bg;
-}
-
 .divider {
   padding: 2px;
   background-color: #1e1145;
@@ -92,8 +86,7 @@ main {
 #contact-list {
   list-style: none;
   padding: 0;
-  background: linear-gradient(0deg, $contact-bg 0%, $contact-bg-2 100%);
-  // background-color: $contact-bg;
+  background-color: $contact-bg;
   color: $contact-color;
   width: fit-content;
   padding: 20px 40px;
@@ -105,4 +98,27 @@ main {
     color: $contact-color;
     text-decoration: underline 1px $contact-color;
   }
+}
+
+#home-desc {
+  background-color: $main-bg;
+  // font-style: italic;
+  width: calc(45% - 40px);
+  margin: auto;
+  padding: 5px 30px;
+  p:last-child {
+    margin: 0;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+footer {
+  background-color: #8C92B6;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  font-style: italic;
+  padding: 5px;
 }
