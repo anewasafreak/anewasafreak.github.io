@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(0deg, #2f131f 0%, #3d182e 100%);
+  background: linear-gradient(0deg, #602d75 0%, #6f5893 100%);
   background-attachment: fixed;
   color: #1e1145;
   font-family: sans-serif;
@@ -81,10 +81,12 @@ nav a {
 }
 
 #home-desc {
-  background-color: #ADBDCD;
+  background-color: #adbdcd;
+  font-style: italic;
   width: calc(45% - 40px);
   margin: auto;
-  padding: 5px 30px;
+  padding: 10px 25px;
+  border-radius: 5px;
 }
 #home-desc p:last-child {
   margin: 0;
@@ -94,9 +96,37 @@ nav a {
 }
 
 footer {
-  background-color: #8C92B6;
-  margin: 20px auto 0 auto;
+  font-style: italic;
+  font-size: smaller;
+  color: rgba(111, 88, 147, 0.6);
+  margin-top: 50px;
+}
+
+.group-wrapper {
+  background-color: #adbdcd;
+  padding: 1px 20px;
+}
+.group-wrapper h1 {
   text-align: center;
   font-style: italic;
-  padding: 5px;
+}
+.group-wrapper h4 {
+  font-weight: 500;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.profile-wrapper {
+  background-color: #8c92b6;
+}
+.profile-wrapper ul {
+  padding: 0;
+  list-style: none;
+}
+.profile-wrapper .headshot {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: calc(100% - 150px);
 }/*# sourceMappingURL=style.css.map */

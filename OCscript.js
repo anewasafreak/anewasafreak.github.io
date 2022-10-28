@@ -28,13 +28,13 @@ function createProfile(data) {
     let groupWrapper = document.createElement("div");
     groupWrapper.className = "group-wrapper";
 
-    let groupH2 = document.createElement("h2");
-    groupH2.innerText = data[0].name;
+    let groupH1 = document.createElement("h1");
+    groupH1.innerText = data[0].name;
 
     let groupDesc = document.createElement("h4");
     groupDesc.innerText = data[0].description;
 
-    groupWrapper.append(groupH2);
+    groupWrapper.append(groupH1);
     groupWrapper.append(groupDesc);
     for (let i = 1; i < data.length; i++) {
       let profileWrapper = document.createElement("div");
@@ -106,7 +106,7 @@ let Mortis = [];
 
 let mortisDesc = new GroupDesc(
   "Mortis",
-  "A group led by a leader who escaped a certain lab 5 years ago with the help of the executives - they're all lab escapees. All of the higher ups aren't human except for the right hand man, though they aren't the only ones like that in this peculiar group."
+  "A mafia group led by a leader who escaped a lab 5 years ago with the help of the executives - they're all lab escapees. All of the higher ups aren't human except for the right hand man, though they aren't the only ones like that in this peculiar group."
 );
 
 Mortis.push(mortisDesc);
