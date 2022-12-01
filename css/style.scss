@@ -102,19 +102,18 @@ nav {
   }
 }
 
-#home-desc {
+#navigation {
   background-color: $main-bg;
   font-style: italic;
-  width: calc(45% - 40px);
-  margin: auto;
+  max-width: fit-content;
   padding: 10px 25px;
   border-radius: 5px;
-  p:last-child {
-    margin: 0;
+  .nav-info {
+    width: 80%;
   }
-
-  p:first-child {
-    margin-top: 0;
+  h1 {
+    max-width: fit-content;
+    margin:0;
   }
 }
 
@@ -144,19 +143,27 @@ footer {
 
 .profile-wrapper {
   background-color: $profile-bg;
-  // display: flex;
+  position: relative;
+  width: 65%;
+  margin: auto;
 
   ul {
     padding: 0;
     list-style: none;
+
+    li {
+      width: 80%;
+      padding: 3px;
+    }
   }
 
   .headshot {
     width: 150px;
     height: 150px;
     position: absolute;
-    left: calc(100% - 150px);
-    // bottom: 200px;
-    // float: right;
+    top: 5px;
+    right: 0px;
+    border-radius: 100%;
+    border: 5px white solid;
   }
 }

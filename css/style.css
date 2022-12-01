@@ -80,19 +80,23 @@ nav a {
           text-decoration: underline 1px #1e0303;
 }
 
-#home-desc {
+#navigation {
   background-color: #adbdcd;
   font-style: italic;
-  width: calc(45% - 40px);
-  margin: auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   padding: 10px 25px;
   border-radius: 5px;
 }
-#home-desc p:last-child {
-  margin: 0;
+#navigation .nav-info {
+  width: 80%;
 }
-#home-desc p:first-child {
-  margin-top: 0;
+#navigation h1 {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0;
 }
 
 footer {
@@ -119,14 +123,24 @@ footer {
 
 .profile-wrapper {
   background-color: #8c92b6;
+  position: relative;
+  width: 65%;
+  margin: auto;
 }
 .profile-wrapper ul {
   padding: 0;
   list-style: none;
 }
+.profile-wrapper ul li {
+  width: 80%;
+  padding: 3px;
+}
 .profile-wrapper .headshot {
   width: 150px;
   height: 150px;
   position: absolute;
-  left: calc(100% - 150px);
+  top: 5px;
+  right: 0px;
+  border-radius: 100%;
+  border: 5px white solid;
 }/*# sourceMappingURL=style.css.map */
