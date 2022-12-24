@@ -1,5 +1,5 @@
-$body-bg: #602d75;
-$body-bg-2: #6f5893;
+$body-bg: #440b5a;
+$body-bg-2: #360f74;
 $header-bg: #adbdcd;
 $header-bg-2: #9ba7c2;
 $header-desc-bg: #201841;
@@ -11,25 +11,18 @@ $nav-color: #e6ecea;
 $nav-border: rgba(#8c92b6, 0.2);
 $contact-bg: #7b74a9;
 $contact-color: #1e0303;
+$contact-explanation-bg: meow;
 $footer-color: rgba(#6f5893, 0.6);
 $profile-bg: #8c92b6;
-
-// @font-face {
-//   font-family: "omorifont";
-//   src: url("/fonts/OMORI_GAME.woff") format("woff"),
-//     url("/fonts/OMORI_GAME2.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
+$link-color: #602d75;
+$link-hover-color: #4e2050;
 
 body {
-  background: linear-gradient(0deg, $body-bg 0%, $body-bg-2 100%);
-  background-attachment: fixed;
   color: $color;
-  // font-family: omorifont;
+  background: linear-gradient(0deg, $body-bg 0%, $body-bg-2 100%);
+  padding: 20px;
   font-family: sans-serif;
   margin: 0;
-  padding: 20px;
 }
 
 header {
@@ -81,24 +74,36 @@ nav {
   margin: 50px 0;
 }
 
-#contact-main {
-  background: none;
-}
-
 #contact-list {
   list-style: none;
-  padding: 0;
   background-color: $contact-bg;
   color: $contact-color;
   width: fit-content;
   padding: 20px 40px;
   text-align: center;
-  margin: 7.5% auto;
+  margin: 2.5% auto;
   border-radius: 5px;
   font-style: italic;
   a {
     color: $contact-color;
     text-decoration: underline 1px $contact-color;
+  }
+}
+
+#explanation {
+  list-style: none;
+  background-color: $contact-bg;
+  color: $contact-color;
+  width: 50%;
+  padding: 20px 40px;
+  margin: 0 auto;
+  border-radius: 5px;
+  li {
+    border-bottom: $body-bg-2 1px solid;
+    padding:5px 0;
+  }
+  li:last-child {
+    border-bottom: none;
   }
 }
 
@@ -114,6 +119,17 @@ nav {
   h1 {
     max-width: fit-content;
     margin:0;
+  }
+  a {
+    text-decoration: none;
+    color: $link-color;
+  }
+  a:hover {
+    color: $link-hover-color;
+  }
+
+  .nav-info {
+    
   }
 }
 

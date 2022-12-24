@@ -1,10 +1,9 @@
 body {
-  background: linear-gradient(0deg, #602d75 0%, #6f5893 100%);
-  background-attachment: fixed;
   color: #1e1145;
+  background: linear-gradient(0deg, #440b5a 0%, #360f74 100%);
+  padding: 20px;
   font-family: sans-serif;
   margin: 0;
-  padding: 20px;
 }
 
 header {
@@ -56,13 +55,8 @@ nav a {
   margin: 50px 0;
 }
 
-#contact-main {
-  background: none;
-}
-
 #contact-list {
   list-style: none;
-  padding: 0;
   background-color: #7b74a9;
   color: #1e0303;
   width: -webkit-fit-content;
@@ -70,7 +64,7 @@ nav a {
   width: fit-content;
   padding: 20px 40px;
   text-align: center;
-  margin: 7.5% auto;
+  margin: 2.5% auto;
   border-radius: 5px;
   font-style: italic;
 }
@@ -78,6 +72,23 @@ nav a {
   color: #1e0303;
   -webkit-text-decoration: underline 1px #1e0303;
           text-decoration: underline 1px #1e0303;
+}
+
+#explanation {
+  list-style: none;
+  background-color: #7b74a9;
+  color: #1e0303;
+  width: 50%;
+  padding: 20px 40px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+#explanation li {
+  border-bottom: #360f74 1px solid;
+  padding: 5px 0;
+}
+#explanation li:last-child {
+  border-bottom: none;
 }
 
 #navigation {
@@ -98,7 +109,13 @@ nav a {
   max-width: fit-content;
   margin: 0;
 }
-
+#navigation a {
+  text-decoration: none;
+  color: #602d75;
+}
+#navigation a:hover {
+  color: #4e2050;
+}
 footer {
   font-style: italic;
   font-size: smaller;
