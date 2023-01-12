@@ -116,6 +116,11 @@ nav a {
 #navigation a:hover {
   color: #4e2050;
 }
+#navigation .nav-info {
+  padding: 5px 0;
+  margin-bottom: 2px;
+}
+
 footer {
   font-style: italic;
   font-size: smaller;
