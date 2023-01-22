@@ -185,6 +185,16 @@ footer {
   }
 }
 
-#info-abt-me {
+// #info-abt-me {
   
+// }
+
+.portfolio-img {
+  width: 33.3%;
+  height: 33.3;
+};
+
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
 }

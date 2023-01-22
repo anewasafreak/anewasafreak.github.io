@@ -165,4 +165,14 @@ footer {
   right: 0px;
   border-radius: 100%;
   border: 5px white solid;
+}
+
+.portfolio-img {
+  width: 33.3%;
+  height: 33.3;
+}
+
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
