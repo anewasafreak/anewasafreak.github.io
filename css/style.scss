@@ -185,6 +185,21 @@ footer {
   }
 }
 
-#info-abt-me {
+// #info-abt-me {
   
+// }
+
+.portfolio-img {
+  max-width: 31.3%;
+  object-fit: cover;
+  padding: 3px;
+  border: 7px solid rgba(#6f5893, 0);
+  box-sizing:border-box;
+  background-image: linear-gradient(131deg, $nav-color 0%, $profile-bg 100%);
+  background-clip: padding-box;
+};
+
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
 }

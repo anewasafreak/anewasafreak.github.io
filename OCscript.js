@@ -68,19 +68,17 @@ function createProfile(data) {
       desc.innerText = data[i].description;
       infoList.append(desc);
 
-      let moreInfoWrapper = document.createElement("li");
+    /*  let moreInfoWrapper = document.createElement("li");
       if (data[i].link === "") {
         moreInfoWrapper.innerText = "THERE IS NO LINK YET RUAAAAA";
         moreInfoWrapper.style = "color:red";
-        console.log("no balls");
       } else {
         let moreInfo = document.createElement("a");
         moreInfo.href = data[i].link;
         moreInfo.innerText = "Read more here";
         moreInfoWrapper.append(moreInfo);
-        console.log("balls");
       }
-      infoList.append(moreInfoWrapper);
+      infoList.append(moreInfoWrapper);*/
 
       let headshot = document.createElement("img");
       headshot.className = "headshot";
@@ -88,9 +86,9 @@ function createProfile(data) {
         headshot.src = data[i].image_src;
       } else {
         headshot.style.display = "none";
-        let noHeadshot = document.createElement("div");
-        noHeadshot.innerText = "There is no headshot for this character yet!";
-        infoList.append(noHeadshot);
+        headshot = document.createElement("div");
+        headshot.innerText = "There is no headshot for this character yet!";
+        infoList.append(headshot);
       }
 
       profileWrapper.append(infoList);
