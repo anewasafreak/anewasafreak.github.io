@@ -1,11 +1,12 @@
 let pictureNames = [
   "abaddon_pfp.png",
   "ane_portrait.png",
-  "hanako_ref.png",
+  "hanako_ref_sheet.png",
   "lawrence.png",
   "mirai_portrait.png",
   "noella_pfp.png",
   "random_portrait.png",
+  "eye.png",
 ];
 
 function addPicture(namespace, array) {

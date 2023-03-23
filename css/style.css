@@ -54,41 +54,6 @@ nav a {
   margin: 50px 0;
 }
 
-#contact-list {
-  list-style: none;
-  background-color: #7b74a9;
-  color: #1e0303;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 20px 40px;
-  text-align: center;
-  margin: 2.5% auto;
-  border-radius: 5px;
-  font-style: italic;
-}
-#contact-list a {
-  color: #1e0303;
-  -webkit-text-decoration: underline 1px #1e0303;
-          text-decoration: underline 1px #1e0303;
-}
-
-#explanation {
-  list-style: none;
-  background-color: #7b74a9;
-  color: #1e0303;
-  width: 50%;
-  padding: 20px 25px;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-#explanation li {
-  border-bottom: #360f74 1px solid;
-  padding: 5px 15px;
-}
-#explanation li:last-child {
-  border-bottom: none;
-}
-
 #navigation {
   background-color: #adbdcd;
   font-style: italic;
@@ -124,47 +89,9 @@ footer {
   margin-top: 50px;
 }
 
-.group-wrapper {
-  background-color: #adbdcd;
-  padding: 1px 20px;
-}
-.group-wrapper h1 {
-  text-align: center;
-  font-style: italic;
-}
-.group-wrapper h4 {
-  font-weight: 500;
-  width: 85%;
-  margin: auto;
-  text-align: center;
-}
-
-.profile-wrapper {
-  background-color: #8c92b6;
-  position: relative;
-  width: 65%;
-  margin: auto;
-}
-.profile-wrapper ul {
-  padding: 0;
-  list-style: none;
-}
-.profile-wrapper ul li {
-  width: 80%;
-  padding: 3px;
-}
-.profile-wrapper .headshot {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 5px;
-  right: 0px;
-  border-radius: 100%;
-  border: 5px white solid;
-}
-
 .portfolio-img {
-  max-width: 31.3%;
+  width: 31.3%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 3px;

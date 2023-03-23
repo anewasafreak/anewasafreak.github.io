@@ -9,11 +9,7 @@ $color: #1e1145;
 $nav-bg: #1c1f54;
 $nav-color: #e6ecea;
 $nav-border: rgba(#8c92b6, 0.2);
-$contact-bg: #7b74a9;
-$contact-color: #1e0303;
-$contact-explanation-bg: meow;
 $footer-color: rgba(#6f5893, 0.6);
-$profile-bg: #8c92b6;
 $link-color: #602d75;
 $link-hover-color: #4e2050;
 
@@ -74,39 +70,6 @@ nav {
   margin: 50px 0;
 }
 
-#contact-list {
-  list-style: none;
-  background-color: $contact-bg;
-  color: $contact-color;
-  width: fit-content;
-  padding: 20px 40px;
-  text-align: center;
-  margin: 2.5% auto;
-  border-radius: 5px;
-  font-style: italic;
-  a {
-    color: $contact-color;
-    text-decoration: underline 1px $contact-color;
-  }
-}
-
-#explanation {
-  list-style: none;
-  background-color: $contact-bg;
-  color: $contact-color;
-  width: 50%;
-  padding: 20px 25px;
-  margin: 0 auto;
-  border-radius: 5px;
-  li {
-    border-bottom: $body-bg-2 1px solid;
-    padding:5px 15px;
-  }
-  li:last-child {
-    border-bottom: none;
-  }
-}
-
 #navigation {
   background-color: $main-bg;
   font-style: italic;
@@ -141,56 +104,13 @@ footer {
   margin-top: 50px;
 }
 
-.group-wrapper {
-  background-color: $main-bg;
-  padding: 1px 20px;
-
-  h1 {
-    text-align: center;
-    font-style: italic;
-  }
-
-  h4 {
-    font-weight: 500;
-    width: 85%;
-    margin: auto;
-    text-align: center;
-  }
-}
-
-.profile-wrapper {
-  background-color: $profile-bg;
-  position: relative;
-  width: 65%;
-  margin: auto;
-
-  ul {
-    padding: 0;
-    list-style: none;
-
-    li {
-      width: 80%;
-      padding: 3px;
-    }
-  }
-
-  .headshot {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 5px;
-    right: 0px;
-    border-radius: 100%;
-    border: 5px white solid;
-  }
-}
-
 // #info-abt-me {
   
 // }
 
 .portfolio-img {
-  max-width: 31.3%;
+   width: 31.3%;
+   height: auto;
   object-fit: cover;
   padding: 3px;
   border: 7px solid rgba(#6f5893, 0);
@@ -202,4 +122,26 @@ footer {
 #portfolio {
   display: flex;
   flex-wrap: wrap;
+}
+
+// TESTING
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 0 30%; /* adjust width as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* set aspect ratio to 1:1 for square images */
 }
