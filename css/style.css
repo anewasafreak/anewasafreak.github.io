@@ -49,10 +49,27 @@ nav a {
 }
 
 #about-me {
+  display: flex;
+  padding: 0 2%;
   background-color: whitesmoke;
+  align-items: center;
 }
 #about-me img {
-  position: relative;
+  margin: 5% 2% 0 2%;
+  width: 50%;
+}
+#about-me #about-me-description {
+  text-align: center;
+  margin: 0 4%;
+}
+#about-me #about-me-description h1 {
+  font-size: 220%;
+}
+#about-me #about-me-description p {
+  font-size: 150%;
+}
+#about-me #about-me-description a {
+  font-size: 140%;
 }
 
 .divider {

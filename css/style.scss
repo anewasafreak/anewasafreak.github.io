@@ -65,9 +65,31 @@ nav {
 }
 
 #about-me {
+  display: flex;
+  padding: 0 2%;
   background-color: whitesmoke;
+  align-items: center;
+
   img {
-    position: relative;
+    margin: 5% 2% 0 2%;
+    width: 50%;
+  }
+
+  #about-me-description {
+    text-align: center;
+    margin: 0 4%;
+
+    h1 {
+      font-size: 220%;
+    }
+
+    p {
+      font-size: 150%;
+    }
+
+    a {
+      font-size: 140%;
+    }
   }
 }
 
