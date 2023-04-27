@@ -1,9 +1,8 @@
 body {
+  padding: 1.5%;
+  font-family: sans-serif;
   color: #1e1145;
   background: linear-gradient(0deg, #440b5a 0%, #360f74 100%);
-  padding: 20px;
-  font-family: sans-serif;
-  margin: 0;
   background-attachment: fixed;
 }
 
@@ -32,9 +31,9 @@ header h2 {
 
 nav {
   display: flex;
-  justify-content: space-around;
-  width: 90%;
-  margin: auto;
+  justify-content: center;
+  position: sticky;
+  top: 0;
 }
 nav a {
   text-decoration: none;
@@ -42,11 +41,12 @@ nav a {
   color: #e6ecea;
   padding: 10px;
   margin: 2px;
-  width: 100%;
+  width: 20%;
   text-align: center;
   box-sizing: border-box;
   border: rgba(140, 146, 182, 0.2) 2px solid;
   border-radius: 5px;
+  font-size: 200%;
 }
 
 #about-me {
@@ -89,7 +89,6 @@ footer {
 .portfolio-img {
   display: block;
   width: 31.3%;
-  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 1/1;
