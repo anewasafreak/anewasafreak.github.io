@@ -2,11 +2,9 @@ let pictureNames = [
   "ane_portrait.png",
   "hanako_ref_sheet.png",
   "mirai_portrait.png",
-  "noella_pfp.png",
   "random_portrait.png",
   "eye.png",
   "couple_drawing.jpg",
-  "messy_portrait.jpg",
   "watercolor_landscape.jpg",
   "mirai_portrait_2.png",
   "cubism.png",
@@ -29,7 +27,7 @@ function addPicture(namespace, array) {
       });
 
       let img = document.createElement("img");
-      img.style = "margin: 5%; ";
+      img.style = "margin: 5%;";
       img.src = imageSource;
       background.append(img);
 
