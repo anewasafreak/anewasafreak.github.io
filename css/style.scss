@@ -14,11 +14,12 @@ $link-color: #602d75;
 $link-hover-color: #4e2050;
 
 body {
-  padding: 1.5%;
+  padding: 1.5% 0;
   font-family: sans-serif;
   color: $color;
   background: linear-gradient(0deg, $body-bg 0%, $body-bg-2 100%);
   background-attachment: fixed;
+  margin: 0;
 }
 
 header {
@@ -50,13 +51,14 @@ nav {
   justify-content: center;
   position: sticky;
   top: 0;
+  background-color: #6f5893;
+  width: 100%;
   a {
     text-decoration: none;
     background-color: $nav-bg;
     color: $nav-color;
     padding: 10px;
     margin: 2px;
-    width: 20%;
     text-align: center;
     box-sizing: border-box;
     border: $nav-border 2px solid;
@@ -66,6 +68,7 @@ nav {
 }
 
 #about-me {
+  margin: 0 1.5%;
   display: flex;
   padding: 0 2%;
   background-color: whitesmoke;
@@ -91,6 +94,13 @@ nav {
     a {
       font-size: 140%;
       text-decoration: none;
+      color:#e6ecea;
+      background-color:#602d75;
+      padding: 1%;
+      border-radius: 10px;
+      svg {
+        fill:#e6ecea;
+      }
     }
   }
 }
