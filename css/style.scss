@@ -49,7 +49,6 @@ header {
 nav {
   display:flex;
   justify-content: center;
-  position: sticky;
   top: 0;
   background-color: #6f5893;
   width: 100%;
@@ -70,29 +69,20 @@ nav {
 #about-me {
   margin: 0 1.5%;
   display: flex;
-  padding: 0 2%;
+  padding: 0 4%;
   background-color: whitesmoke;
   align-items: center;
+  max-height: fit-content;
 
   img {
-    margin: 5% 2% 0 2%;
-    width: 50%;
+    max-width: 20%;
   }
 
   #about-me-description {
     text-align: center;
-    margin: 0 4%;
-
-    h1 {
-      font-size: 220%;
-    }
-
-    p {
-      font-size: 150%;
-    }
+    margin-left: 2%;
 
     a {
-      font-size: 140%;
       text-decoration: none;
       color:#e6ecea;
       background-color:#602d75;
@@ -123,8 +113,8 @@ footer {
   width: 31.3%;
   object-fit: cover;
   aspect-ratio: 1/1;
-  padding: 7px;
-  border: 7px solid rgba(#6f5893, 0);
+  padding: 0.5%;
+  margin: 0.3%;
   box-sizing: border-box;
   background-image: linear-gradient(131deg, $header-bg-2 0%, $nav-border 100%);
   background-clip: padding-box;

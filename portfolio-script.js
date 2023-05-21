@@ -11,6 +11,11 @@ let pictureNames = [
   "scaramouche_octoling.png",
 ];
 
+function preventScroll(e) {
+  e.preventDefault();
+  e.stopPropagation();
+}
+
 function addPicture(namespace, array) {
   for (i = 0; i < array.length; i++) {
     let imageSource = namespace + array[i];
