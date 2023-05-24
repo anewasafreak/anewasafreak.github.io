@@ -1,23 +1,23 @@
-$body-bg: #440b5a;
-$body-bg-2: #360f74;
-$header-bg: #adbdcd;
-$header-bg-2: #9ba7c2;
-$header-desc-bg: #201841;
-$header-color: #4e2050;
-$main-bg: #adbdcd;
-$color: #1e1145;
-$nav-bg: #1c1f54;
-$nav-color: #e6ecea;
-$nav-border: rgba(#8c92b6, 0.2);
-$footer-color: rgba(#6f5893, 0.6);
-$link-color: #602d75;
-$link-hover-color: #4e2050;
+$white: #e6ecea;
+$off-white: #adbdcd;
+
+$lighter-gray: #9ba7c2;
+$light-gray: #8c92b6;
+$gray: #6f5893;
+$dark-gray: #602d75;
+$darker-gray: #4e2050;
+
+$lighter-color: #440b5a;
+$light-color: #360f74;
+$color: #201841;
+$dark-color: #1c1f54;
+$darker-color: #1e1145;
 
 body {
   padding: 1.5% 0;
   font-family: sans-serif;
-  color: $color;
-  background: linear-gradient(0deg, $body-bg 0%, $body-bg-2 100%);
+  color: $darker-color;
+  background: linear-gradient(0deg, $lighter-color 0%, $light-color 100%);
   background-attachment: fixed;
   margin: 0;
 }
@@ -28,41 +28,21 @@ header {
   margin: auto;
 
   h1 {
-    background: linear-gradient(180deg, $header-bg 0%, $header-bg-2 100%);
+    background: linear-gradient(180deg, $off-white 0%, $lighter-gray 100%);
     font-size: 400%;
     margin: 0 0 10px 0;
-    color: $header-color;
+    color: $darker-gray;
     padding: 0 50px;
     border-radius: 5px;
   }
 
   h2 {
-    background-color: $header-desc-bg;
+    background-color: $color;
     font-size: 200%;
     font-weight: 500;
     margin: 0 auto;
     padding: 0 5%;
     width: 50%;
-  }
-}
-
-nav {
-  display:flex;
-  justify-content: center;
-  top: 0;
-  background-color: #6f5893;
-  width: 100%;
-  a {
-    text-decoration: none;
-    background-color: $nav-bg;
-    color: $nav-color;
-    padding: 10px;
-    margin: 2px;
-    text-align: center;
-    box-sizing: border-box;
-    border: $nav-border 2px solid;
-    border-radius: 5px;
-    font-size: 200%;
   }
 }
 
@@ -75,12 +55,15 @@ nav {
   max-height: fit-content;
 
   img {
-    max-width: 20%;
+   max-width: 15%;
   }
 
   #about-me-description {
     text-align: center;
     margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     a {
       text-decoration: none;
@@ -88,6 +71,9 @@ nav {
       background-color:#602d75;
       padding: 1%;
       border-radius: 10px;
+      display: flex;
+      align-items: center;
+      max-width: fit-content;
       svg {
         fill:#e6ecea;
       }
@@ -104,8 +90,16 @@ nav {
 footer {
   font-style: italic;
   font-size: smaller;
-  color: $footer-color;
+  color: rgba($gray, 0.6);
   margin-top: 50px;
+  text-align: center;
+  a {
+    background-color: #201841;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#9ba7c2;
+  }
 }
 
 .portfolio-img {
@@ -116,7 +110,7 @@ footer {
   padding: 0.5%;
   margin: 0.3%;
   box-sizing: border-box;
-  background-image: linear-gradient(131deg, $header-bg-2 0%, $nav-border 100%);
+  background-image: linear-gradient(131deg, $lighter-gray 0%, rgba($light-gray, 0.2) 100%);
   background-clip: padding-box;
 };
 

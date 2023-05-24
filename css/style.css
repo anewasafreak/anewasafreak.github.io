@@ -30,26 +30,6 @@ header h2 {
   width: 50%;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  top: 0;
-  background-color: #6f5893;
-  width: 100%;
-}
-nav a {
-  text-decoration: none;
-  background-color: #1c1f54;
-  color: #e6ecea;
-  padding: 10px;
-  margin: 2px;
-  text-align: center;
-  box-sizing: border-box;
-  border: rgba(140, 146, 182, 0.2) 2px solid;
-  border-radius: 5px;
-  font-size: 200%;
-}
-
 #about-me {
   margin: 0 1.5%;
   display: flex;
@@ -60,11 +40,14 @@ nav a {
   max-height: fit-content;
 }
 #about-me img {
-  max-width: 20%;
+  max-width: 15%;
 }
 #about-me #about-me-description {
   text-align: center;
   margin-left: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #about-me #about-me-description a {
   text-decoration: none;
@@ -72,6 +55,10 @@ nav a {
   background-color: #602d75;
   padding: 1%;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 #about-me #about-me-description a svg {
   fill: #e6ecea;
@@ -88,6 +75,14 @@ footer {
   font-size: smaller;
   color: rgba(111, 88, 147, 0.6);
   margin-top: 50px;
+  text-align: center;
+}
+footer a {
+  background-color: #201841;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #9ba7c2;
 }
 
 .portfolio-img {
