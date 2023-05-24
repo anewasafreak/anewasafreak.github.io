@@ -37,7 +37,7 @@ $darker-color: #1e1145;
 }
 
 body {
-  padding: 1.5% 0;
+  padding: 1.5% 5%;
   font-family: sans-serif;
   color: $darker-color;
   background: linear-gradient(0deg, $lighter-color 0%, $light-color 100%);
@@ -52,20 +52,12 @@ header {
 
   h1 {
     background: linear-gradient(180deg, $off-white 0%, $lighter-gray 100%);
-    font-size: 400%;
+    font-size: 5vw;
     margin: 0 0 10px 0;
     color: $darker-gray;
     padding: 0 50px;
     border-radius: 5px;
-  }
-
-  h2 {
-    background-color: $color;
-    font-size: 200%;
-    font-weight: 500;
-    margin: 0 auto;
-    padding: 0 5%;
-    width: 50%;
+    max-width: 100%;
   }
 }
 
