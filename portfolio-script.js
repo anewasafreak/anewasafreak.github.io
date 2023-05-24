@@ -33,6 +33,7 @@ function addPicture(namespace, array) {
 
       let img = document.createElement("img");
       img.style = "margin: 5%;";
+      img.id = "selected-img";
       img.src = imageSource;
       background.append(img);
 
