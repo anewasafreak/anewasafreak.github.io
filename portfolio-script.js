@@ -25,7 +25,7 @@ function addPicture(namespace, array) {
     image.addEventListener("click", (image) => {
       background = document.createElement("div");
       background.style =
-        "position:fixed; width:100%; height:100%; background-color: rgba(0, 0, 0, 0.7); top:0; left:0; display: flex; justify-content: center;";
+        "";
       background.id = "background";
       background.addEventListener("click", function (e) {
         background.remove();
@@ -44,7 +44,3 @@ function addPicture(namespace, array) {
 }
 
 addPicture("./portfolio/", pictureNames);
-
-//fetch('file.txt')
-//  .then(response => response.text())
-//  .then(text => console.log(text))
